@@ -14,60 +14,62 @@
       width: 100%;
       z-index: 1000;
     }
-
-    .slide {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: row;
-        width: 300vw;
-        transform: rotate(90deg)  translateY(-100vh);
-        transform-origin: top left;
-    }
-
-    .one {
-        background-color: rgb(233, 233, 233);
-    }
-
-    .two {
-        background-color: rgb(233, 233, 233);
-    }
-
-    .three {
-        background-color: rgb(233, 233, 233);
-    }
- 
-    .outer-wrapper {
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        position: absolute;
-        scrollbar-width: none;
-        -ms-overflow-style: none;    
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .pdf {
-        margin-left: 10vw;
-        margin-top: 10vh;
-        width: 80vw;
-        height: 80vh;
-    }
     
-    .test {
-        text-align: center;
-        margin-top: 2vh;
-    }
+    .one {
+            background-color: rgb(233, 233, 233);
+        }
 
+        .two {
+            background-color: rgb(233, 233, 233);
+        }
+
+        .three {
+            background-color: rgb(233, 233, 233);
+        }
+
+    @media (min-width: 769px) {
+        .slide {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 300vw;
+            transform: rotate(90deg)  translateY(-100vh);
+            transform-origin: top left;
+        }
+
+    
+        .outer-wrapper {
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(-90deg) translateX(-100vh);
+            transform-origin: top left;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            position: absolute;
+            scrollbar-width: none;
+            -ms-overflow-style: none;    
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pdf {
+            margin-left: 10vw;
+            margin-top: 10vh;
+            width: 80vw;
+            height: 80vh;
+        }
+        
+        .test {
+            text-align: center;
+            margin-top: 2vh;
+        }
+    }
     @media (max-width: 768px) {
       .outer-wrapper {
         width: 100vh;
@@ -77,6 +79,17 @@
         .wrapper {
             display: auto;
             flex-direction: auto;
+        }
+        .pdf {
+            margin-left: 10vw;
+            margin-top: 10vh;
+            width: 80vw;
+            height: 80vh;
+        }
+        .text-wrap {
+            height: 0;
+            width: 0;
+            display: none;
         }
     }
 
@@ -111,17 +124,17 @@
         <div class="wrapper">
             <div class="slide one"> 
                 <iframe class="pdf" src="pdfs/Bus_route_proposal_Spencer_Phillips.pdf"> </iframe>
-                <h1 class="test"> hover and scroll outside of pdf to move to the side!! --> </h1>
+                <h1 class="test text-wrap"> hover and scroll outside of pdf to move to the side!! --> </h1>
 
             </div>
             <div class="slide two"> 
                 <iframe class="pdf" src="pdfs/major_instructions_Spencer_Phillips.pdf"> </iframe>
-                <h1 class="test"> hover and scroll outside of pdf to move to the side!! --> </h1>
+                <h1 class="test text-wrap"> hover and scroll outside of pdf to move to the side!! --> </h1>
 
             </div>
             <div class="slide three">
                 <iframe class="pdf" src="pdfs/major_instructions_Spencer_Phillips.pdf"> </iframe>
-                <h1 class="test"> hover and scroll outside of pdf to move to the side!! --> </h1>
+                <h1 class="test text-wrap"> hover and scroll outside of pdf to move to the side!! --> </h1>
 
             </div>
         </div>
