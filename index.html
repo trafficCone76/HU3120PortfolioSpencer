@@ -13,30 +13,43 @@
       left: 0;
       width: 100%;
       z-index: 1000;
+      margin-bottom: 1%;
     }
     
-    .one {
-            background-color: rgb(233, 233, 233);
-        }
+    .body {
+        background-color: rgb(233,233,233);
+    }
 
-        .two {
-            background-color: rgb(233, 233, 233);
-        }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100%{ opacity: 1;}
+    }
 
-        .three {
-            background-color: rgb(233, 233, 233);
-        }
+    .AuthorNotes {
+        margin-top: 10vh;
+    }
 
     @media (min-width: 769px) {
         .slide {
             width: 100vw;
             height: 100vh;
         }
+        
+        .broder-interior {
+            height: 10vh;
+            width: 80vw;
+            padding-top: 3vh;
+        }
+
+        .broder-first {
+            margin-top: 20vh;
+            height: 10vh;
+        }
 
         .wrapper {
             display: flex;
             flex-direction: row;
-            width: 300vw;
+            width: 700vw;
             transform: rotate(90deg)  translateY(-100vh);
             transform-origin: top left;
         }
@@ -62,40 +75,76 @@
             margin-left: 10vw;
             margin-top: 10vh;
             width: 80vw;
-            height: 80vh;
+            height: 70vh;
         }
         
         .test {
             text-align: center;
-            margin-top: 2vh;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            margin-top: 5vh;
+        }
+
+        .preface {
+            margin-top: 10vh;
+            opacity: 1;
+            animation: fadeIn 1s;
+        }
+        .prefaceMobile{
+            display: none;
         }
     }
+
     @media (max-width: 768px) {
       .outer-wrapper {
-        width: 100vh;
-        height: 100vw;
+        width: auto;
+        height: auto;
         }
 
         .wrapper {
             display: auto;
             flex-direction: auto;
         }
+
         .pdf {
-            margin-left: 10vw;
-            margin-top: 10vh;
-            width: 80vw;
-            height: 80vh;
+            margin-left: 5vw;
+            margin-top: 5vh;
+            width: 90vw;
+            height: 95vh;
         }
+
         .text-wrap {
             height: 0;
             width: 0;
             display: none;
         }
+
+        .test {
+            text-align: center;
+            padding-top: 5%;
+            margin-right: 5vw;
+            margin-left: 5vw;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        
+        .preface {
+            display: none;
+        }
+        .prefaceMobile{
+            opacity: 1;
+            margin-top: 10vh;
+        }
     }
 
  </style>
+
+<script>
+    
+</script>
+
 </head>
-<body>
+<body class="body">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -122,25 +171,119 @@
    <!-- Horizontal Sections -->
     <div class="outer-wrapper">
         <div class="wrapper">
+            <div class="slide preface"> 
+                <h1 class=" test text-wrap"> How To Use This Website </h1>
+
+                <p class="test text-wrap"> 
+                    This website it built with cool UI/UX features, please read everything here first before continuing.
+                    <br><br>All the revised projects are on this site. To view the revised projects scroll normally<br> 
+                    (up and down swiping on trackpads or scrolling with a mouse wheel), <br>
+                    this will move the screen horizontally! Ti scroll in the pdf, hover your cursor anywhere inside the pdf
+                    viewbox, and scroll normally. Once you view the pdf of the changed project, move your mouse anywhere
+                    off the pdf or use the "SCROLL HERE" boxes. Scrolling one page further will allow you to see the authors notes 
+                    for the updated pdf you just viewed. 
+                </p>
+
+                <p class="test text-wrap">
+                    PS: Only desktops will support the horizontal scrolling, mobile will have a standard vertical scroll. 
+                </p>
+
+                <h3 class="test text-wrap"> scroll to move to the side!! --> </h3>
+
+                <div class="border border-dark broder-first test">SCROLL HERE <br>(This first scroll prompt is too high and does not line up with the others
+                    and I could not fix)</div>
+            </div>
+
+            <div class="slide prefaceMobile">
+                <h1 class=" test text-wrap"> How to digest the content </h1>
+
+                <p class="test text-wrap"> Each updated is on this site, you will view the pdf of the changed document and then scrolling 
+                    one page further will allow you to see the authors notes for the updated pdf you just viewed. 
+                </p>
+            </div>
+
             <div class="slide one"> 
                 <iframe class="pdf" src="pdfs/Bus_route_proposal_Spencer_Phillips.pdf"> </iframe>
-                <h1 class="test text-wrap"> hover and scroll outside of pdf to move to the side!! --> </h1>
-
+                <div class="border border-dark broder-interior test">SCROLL HERE</div>
             </div>
+
+            <div class="slide AuthorNotes"> 
+                <p class="test text-wrap"> 
+                    <b> 1. What changes did you make to the assignment? Why? (I'm looking for more than "because Jordan said so." 
+                        Try to think about the assignment's audience and how revisions would help them.) </b><br>
+                    For the proposal, I revised grammar and spelling to ensure clarity and consistency throughout 
+                    the document. I had not noticed that the proposal had zero sections that mentioned the figures, 
+                    leaving it all up to the primary audience inferring their use. Pointing this out in the feedback 
+                    let me know to add mentions of the figures at appropriate points in the text. I did ensure I would 
+                    have the references match the content they support. Doing this had me find out that the current locations 
+                    of the figures felt more random than I expected. To remedy this I moved the locations of the figures to better 
+                    reflect when I mentioned them in the writing and where they would support the section nearest, improving the 
+                    flow and coherence of the figures. I also added clarifying sentences in multiple sections to reduce the feeling 
+                    of clunkiness and enhance overall readability, making the transitions between sections smoother and more natural. 
+                    I also found I never fully explained why I chose the route itself. Thus I implemented clarifications for my 
+                    reasonings in the solution section of the proposal.
+
+                    <br><br>
+                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b><br>
+                    There was no feedback I decided not to incorporate. I did not see a large amount of feedback, 
+                    thus, any feedback skipped would result in a minimal amount of changes in the document, hindering the revision.
+                </p>
+            </div>
+
             <div class="slide two"> 
                 <iframe class="pdf" src="pdfs/major_instructions_Spencer_Phillips.pdf"> </iframe>
-                <h1 class="test text-wrap"> hover and scroll outside of pdf to move to the side!! --> </h1>
-
+                <div class="border border-dark broder-interior test"> SCROLL HERE</div>
             </div>
-            <div class="slide three">
-                <iframe class="pdf" src="pdfs/major_instructions_Spencer_Phillips.pdf"> </iframe>
-                <h1 class="test text-wrap"> hover and scroll outside of pdf to move to the side!! --> </h1>
 
+            <div class="slide AuthorNotes"> 
+                <p class="test text-wrap"> 
+                    <b> 1. What changes did you make to the assignment? Why? (I'm looking for more than "because Jordan said so." 
+                        Try to think about the assignment's audience and how revisions would help them.) </b><br>
+                    I fixed a large number of grammatical errors and misspellings. 
+                    I also changed the steps to show “Step x” and “substep x” based on the feedback. This did lead to issues, 
+                    as mentioned in emails, when the clarifications are added to the numbering system word automatically adds a large
+                    amount of padding between the "step x" and step description.
+                    On top of this, I bolded the Steps to help readability and added a space after each step; 
+                    no space was added between step and substep to help the connection between each step be made subconsciously. 
+
+                    <br><br>
+                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b><br>
+                    I did not incorporate the feedback to add images to the major instructions. I decided against 
+                    this as, while it would be helpful, I ran into a multitude of issues getting the formatting and 
+                    flow for the document to not get interrupted or fully break with the added images. For example I 
+                    tried to add an image of the shifter so the reader would EXACTLY what to interact with. When adding 
+                    it I tried adding it inline but it broke the flow of the document, and when adding to the sides it 
+                    got confusing which image correlated to which step. I also had my girlfriend run through the steps, 
+                    one version with the images, and one without. The feedback I received was that the steps without 
+                    images were easier to go through, but harder to visualize what was needed. She also mentioned the 
+                    version with images containing too many images, while helpful, it made it confusing exactly what 
+                    she was looking for in each image. She also mentioned she still preferred it without images. Thus 
+                    I chose to omit images, whilst I understand the document would be better with images, I have not figured 
+                    out how to properly implement images without cluttering the document or making it worse to go through.
+                </p>
+            </div>
+
+            <div class="slide three">
+                <iframe class="pdf" src="pdfs/proposal_slides.pdf"> </iframe>
+                <div class="border border-dark broder-interior test"> SCROLL HERE</div>
+            </div>
+
+            <div class="slide AuthorNotes"> 
+                <p class="test text-wrap"> 
+                    <b> 1. What changes did you make to the assignment? Why? (I'm looking for more than "because Jordan said so." 
+                        Try to think about the assignment's audience and how revisions would help them.) </b><br>
+                    The costs slide has been modified to be a table. 
+                    I also incorporated more information as to why certain calculations are used, 
+                    such as only running for 6 hours a day, this was done due to the first year 
+                    being a research study, which means there is not a fully investment and reduced hours. 
+
+                    <br><br>
+                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b><br>
+                    There was no feedback I decided not to incorporate. I did not see a large amount of feedback, 
+                    thus, any feedback skipped would result in a minimal amount of changes in the document, hindering the revision.
+                </p>
             </div>
         </div>
     </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
