@@ -28,11 +28,6 @@
         font-size: 2vh;
     }
 
-    @keyframes fadeIn {
-        0% {opacity: 0;}
-        100%{ opacity: 1;}
-    }
-
     .AuthorNotes {
         margin-top: 10vh;
     }
@@ -97,8 +92,21 @@
         .preface {
             margin-top: 10vh;
             opacity: 1;
-            animation: fadeIn 2s;
+            animation: fadeIn 1s;
         }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0; 
+                transform: scale(0);
+            }
+
+            100%{ 
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
         .prefaceMobile{
             display: none;
         }
@@ -226,21 +234,22 @@
             <div class="slide AuthorNotes"> 
                 <p class="test text-wrap"> 
                     <b> 1. What changes did you make to the assignment? Why? (I'm looking for more than "because Jordan said so." 
-                        Try to think about the assignment's audience and how revisions would help them.) </b><br>
-                    For the proposal, I revised grammar and spelling to ensure clarity and consistency throughout 
-                    the document. I had not noticed that the proposal had zero sections that mentioned the figures, 
-                    leaving it all up to the primary audience inferring their use. Pointing this out in the feedback 
-                    let me know to add mentions of the figures at appropriate points in the text. I did ensure I would 
-                    have the references match the content they support. Doing this had me find out that the current locations 
-                    of the figures felt more random than I expected. To remedy this I moved the locations of the figures to better 
-                    reflect when I mentioned them in the writing and where they would support the section nearest, improving the 
-                    flow and coherence of the figures. I also added clarifying sentences in multiple sections to reduce the feeling 
-                    of clunkiness and enhance overall readability, making the transitions between sections smoother and more natural. 
-                    I also found I never fully explained why I chose the route itself. Thus I implemented clarifications for my 
-                    reasonings in the solution section of the proposal.
+                        Try to think about the assignment's audience and how revisions would help them.) </b>
+                    <br>
+                    For the proposal, I revised grammar and spelling to ensure clarity and consistency throughout the document. 
+                    I had not noticed that the proposal had zero sections that mentioned the figures, leaving it all up to the 
+                    primary audience to infer their use. Pointing this out in the feedback let me know to add mentions of the figures 
+                    at appropriate points in the text. I ensured that I would have the references match the content they support. 
+                    Doing this had me find out that the current locations of the figures felt more random than I expected. To remedy 
+                    this, I moved the locations of the figures to better reflect when I mentioned them in the writing and where they 
+                    would support the section, improving the flow and coherence of the figures. I also added clarifying sentences in 
+                    multiple sections to reduce the feeling of clunkiness and enhance overall readability, making the transitions 
+                    between sections smoother and more natural. I also found I never fully explained why I chose the route itself. 
+                    Thus, I implemented clarifications for my reasoning in the solution section of the proposal.
 
                     <br><br>
-                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b><br>
+                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b>
+                    <br>
                     There was no feedback I decided not to incorporate, as I found all the suggestions to be relevant, 
                     constructive, and beneficial to the quality of the proposal. I did not receive a large amount of 
                     feedback overall. Thus, skipping any of the feedback provided would have resulted in only a minimal 
@@ -259,7 +268,8 @@
             <div class="slide AuthorNotes"> 
                 <p class="test text-wrap"> 
                     <b> 1. What changes did you make to the assignment? Why? (I'm looking for more than "because Jordan said so." 
-                        Try to think about the assignment's audience and how revisions would help them.) </b><br>
+                        Try to think about the assignment's audience and how revisions would help them.) </b>
+                    <br>
                     I fixed a large number of grammatical errors and misspellings. 
                     I also changed the steps to show “Step x” and “substep x” based on the feedback. This did lead to issues, 
                     as mentioned in emails, when the clarifications are added to the numbering system word automatically adds a large
@@ -268,19 +278,21 @@
                     no space was added between step and substep to help the connection between each step be made subconsciously. 
 
                     <br><br>
-                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b><br>
-                    I did not incorporate the feedback to add images to the major instructions. I decided against 
-                    this as, while it would be helpful, I ran into a multitude of issues getting the formatting and 
-                    flow for the document to not get interrupted or fully break with the added images. For example I 
-                    tried to add an image of the shifter so the reader would EXACTLY what to interact with. When adding 
-                    it I tried adding it inline but it broke the flow of the document, and when adding to the sides it 
-                    got confusing which image correlated to which step. I also had my girlfriend run through the steps, 
-                    one version with the images, and one without. The feedback I received was that the steps without 
-                    images were easier to go through, but harder to visualize what was needed. She also mentioned the 
-                    version with images containing too many images, while helpful, it made it confusing exactly what 
-                    she was looking for in each image. She also mentioned she still preferred it without images. Thus 
-                    I chose to omit images, whilst I understand the document would be better with images, I have not figured 
-                    out how to properly implement images without cluttering the document or making it worse to go through.
+                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b>
+                    <br>
+                    I did not incorporate the feedback to add images to the major instructions. I decided against this as, while 
+                    it would be helpful, I ran into a multitude of issues getting the formatting and flow for the document to 
+                    not get interrupted or fully break with the added images. For example, I tried to add an image of the 
+                    shifter so the reader would EXACTLY what to interact with. When adding it, I tried adding it in-line, but it 
+                    broke the flow of the document, and when adding to the sides, it got confusing which image correlated to 
+                    which step. I also had my girlfriend run through the steps, one version with the images, and one without. 
+                    The feedback I received was that the steps without images were easier to go through, but harder to visualize 
+                    what was needed. She also mentioned the version with images containing too many images, while helpful, it 
+                    made it confusing exactly what she was looking for in each image. She also mentioned she still preferred it 
+                    without images. Thus, I chose to omit images, whilst I understand the document would be better with images, 
+                    I have not figured out how to properly implement images without cluttering the document or making it worse to 
+                    go through.
+
                 </p>
             </div>
 
@@ -292,21 +304,22 @@
             <div class="slide AuthorNotes"> 
                 <p class="test text-wrap"> 
                     <b> 1. What changes did you make to the assignment? Why? (I'm looking for more than "because Jordan said so." 
-                        Try to think about the assignment's audience and how revisions would help them.) </b><br>
-                    The costs slide has been modified to be a table. This was implemented as it made the math more 
-                    digestible to read. It also allowed me to split the used bus and new bus section, with a separate 
-                    section being where I needed to include the steps up to gas costs, and then gas costs were split up 
-                    between the new bus and old bus table. I also incorporated more information as to why certain calculations 
-                    are used, such as only running for 6 hours a day, this was done due to the first year being a research study, 
-                    which means there is not a full investment and reduced hours which is to save the university money. This also 
-                    allows the school to create another research project, which will help keep our new R1 status. I also modified 
-                    image locations to better fit each slide, and moved the first 2 figure references to be more readable and not 
-                    overlap other colors, improving accessibility. While doing this I found one of the figure references was not 
-                    correctly contrasted against the background, I changed the font color to white to match the other references 
-                    on similar backgrounds. This improved the clarity and readability immensely. 
+                        Try to think about the assignment's audience and how revisions would help them.) </b>
+                    <br>
+                    The cost slide has been modified to be a table. This was implemented as it made the math more digestible to read. 
+                    It also allowed me to split the used bus and new bus sections, with a separate section being where I needed to 
+                    include the steps up to gas costs, and then gas costs were split up between the new bus and old bus tables. I also 
+                    incorporated more information as to why certain calculations are used, such as only running for 6 hours a day. 
+                    This was done due to the first year being a research study, which means there is not a full investment and reduced 
+                    hours, which is to save the university money. This also allows the school to create another research project, 
+                    which will help keep our new R1 status. I also modified image locations to better fit each slide, and moved the 
+                    first 2 figure references to be more readable and not overlap other colors, improving accessibility. While doing 
+                    this, I found that one of the figure references was not correctly contrasted against the background. I changed the 
+                    font color to white to match the other references on similar backgrounds. This improved the clarity and readability immensely. 
 
                     <br><br>
-                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b><br>
+                    <b>2. Were there any changes that you received feedback on and didn't incorporate? Why?</b>
+                    <br>
                     There was no feedback I decided not to incorporate, as I found all the suggestions to be relevant, 
                     constructive, and beneficial to the quality of the proposal. I did not receive a large amount of feedback 
                     overall. Thus, skipping any of the feedback provided would have resulted in only a minimal amount of 
@@ -321,23 +334,22 @@
                 <h1 class="test text-wrap"> Style Guide Reflection</h1>
 
                 <p class="test text-wrap"> 
-                    The style guide I created works well enough for a majority of the assignments. The font worked incredibly 
-                    well, and it still is my favorite font for readability and accessibility. I believe I made the correct 
-                    choice with Courier New. I also believe the line spacing was the correct choice. The simple colors allowed 
-                    good contrast and accessibility. Now, onto the reason I say it worked only for a majority of the assignments. 
-                    This is because of the major instructions assignment. This assignment was not very easily readable, and to have 
-                    good flow and readability, more padding/margin is required. Also, allowing more formatting freedoms for 
-                    differentiating steps and substeps is required. This assignment specifically would of benefited from more freedom 
-                    with line spacing, as having 1.15 line spacing specifically between each step would of been beneficial. I also ran 
-                    into issues with image formatting, which I should have included in the style guide. I also would have chosen to make 
-                    more distinctions on what counts as a heading vs body, as it got confusing on assignments. Especially on this website 
-                    it has been extremely difficult to get the formatting to exactly match as “font sizes” and such do not mean the same 
-                    thing as they do in a word processor, nor do they scale the same.
+                    The style guide I created works well enough for a majority of the assignments. The font worked incredibly well, 
+                    and it still is my favorite font for readability and accessibility. I believe I made the correct choice with 
+                    Courier New. I also believe the line spacing was the correct choice. The simple colors allowed good contrast 
+                    and accessibility. Now, onto the reason I say it worked only for a majority of the assignments. This is because 
+                    of the major instructions assignment. This assignment was not very easily readable, and to have good flow and 
+                    readability, more padding/margin is required. Also, allowing more formatting freedoms for differentiating steps 
+                    and substeps is required. This assignment specifically would have benefited from more freedom with line spacing, 
+                    as having 1.15 line spacing specifically between each step would have been beneficial. I also ran into issues 
+                    with image formatting, which I should have included in the style guide. I also would have chosen to make more 
+                    distinctions on what counts as a heading vs body, as it got confusing on assignments. Especially on this website, 
+                    it has been extremely difficult to get the formatting to exactly match as “font sizes” and such do not mean the 
+                    same thing as they do in a word processor, nor do they scale the same.
                     <br><br>
-                    I believe that this style guide would work well in a job setting, largely due to the focus on readability. My field is 
-                    currently aging, so the distribution between younger and older engineers is proportionally skewed towards the upper end. 
-                    Meaning larger text, consistent spacing, and contrasted coloring, ensure the style guide will do well.
-                    
+                    I believe that this style guide would work well in a job setting, largely due to the focus on readability. My 
+                    field is currently aging, so the distribution between younger and older engineers is proportionally skewed 
+                    towards the upper end. Meaning larger text, consistent spacing, and contrasted coloring, ensure the style guide will do well.
                     
                 </p>
             </div>

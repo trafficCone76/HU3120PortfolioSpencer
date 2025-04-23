@@ -15,6 +15,15 @@
       overflow-x: auto;
       white-space: wrap;
     }
+    
+    .lead, .about {
+      animation: fadeIn 1.5s;
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100%{ opacity: 1;}
+    }
 
     .body, h1, h2, h3, p {
       font-family: 'Courier New', Courier, monospace;
@@ -75,7 +84,7 @@
 
   <div id="about" class="horizontal-section bg-light d-flex justify-content-center align-items-center text-center">
     <div class="container">
-      <h1 class="mb-4">About this project</h1>
+      <h1 class="mb-4 about">About this project</h1>
       <p class="lead text-wrap">
         This website was created as the final project for HU3120. It is designed to showcase
         my changes to 3 major assignments in the class. Specifically the Major instructions, Proposal, Presentation.

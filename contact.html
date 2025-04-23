@@ -8,32 +8,39 @@
 
     <style>
      
-        .horizontal-section {
-        display: inline-block;
-        width: 100vw;
-        height: 100vh;
-        vertical-align: top;
-        padding-top: 70px; /* offset for navbar */
-        }
+      .horizontal-section {
+      display: inline-block;
+      width: 100vw;
+      height: 100vh;
+      vertical-align: top;
+      padding-top: 70px; /* offset for navbar */
+      }
 
-        .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        }
+      .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      }
 
-        .container {
-            margin-top: 10vh;
-        }
+      .container {
+        animation: fadeIn 1.5s;
+      }
 
-        .contact {
-            width: 100vw;
-            max-width: 100%;
-        }
+      @keyframes fadeIn {
+          0% {opacity: 0;}
+          100%{ opacity: 1;}
+      }
 
+      .container {
+          margin-top: 10vh;
+      }
 
+      .contact {
+          width: 100vw;
+          max-width: 100%;
+      }
     </style>
 </head>
 <body>
